@@ -1,0 +1,834 @@
+/* Grundlæggende stilarter for nulstilling af margin og padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Stilarter for body, som definerer skrifttype, baggrundsfarve, tekstfarve og skygger */
+body {
+  font-family: 'Gafata', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(30, 30, 30, 1);
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+/* Header sektion, som indeholder logo og navigation */
+header {
+  background-color: rgba(30, 30, 30, 1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Logo stilarter for at centrere det */
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Stilarter for logo billede, der definerer maksimal højde og margin */
+.logo img {
+  max-height: 150px;
+  margin-left: 220px;
+  margin-top: 30px;
+}
+
+/* Navigation sektion, der placerer navigationslinks */
+nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+/* Navigation liste stilarter, der fjerner punkttegn og justerer mellemrum */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-size: 24px;
+  font-family: 'Gafata', sans-serif;
+}
+
+/* Navigation link stilarter, der definerer tekstfarve og fjernet understregning */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Gafata', sans-serif;
+}
+
+/* Pil ned stilarter for dropdown-menuer */
+.pil-ned {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+/* Dropdown menu stilarter */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown indhold stilarter, der skjuler indhold som standard */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Dropdown links stilarter, der definerer farve og padding */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown hover effekt for at vise indhold, når der hoveres */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hero sektion stilarter, der definerer baggrundsfarve, tekstfarve og padding */
+.hero {
+  background: rgba(30, 30, 30, 1);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+/* Hero overskrift stilarter, der definerer skrifttype og margin */
+.hero h1 {
+  font-family: 'Gafata', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Divider separator stilarter, der definerer margin og baggrundsfarve */
+.elementor-divider-separator {
+  margin: 20px auto;
+  width: 100px;
+  height: 2px;
+  background-color: white;
+}
+
+/* Blog divider stilarter, der definerer margin og baggrundsfarve */
+.blog-divider {
+  margin: 20px auto;
+  width: 1000px;
+  height: 1px;
+  background-color: white;
+}
+
+/* Køb online knap stilarter, der definerer baggrundsfarve, tekstfarve, padding og margin */
+.køb-online {
+  background-color: red;
+  color: white;
+  border: none;
+  font-family: 'Gafata', sans-serif;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+/* Hero billeder stilarter, der definerer layout og margin */
+.hero-billeder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Brew sektion stilarter, der definerer baggrundsfarve, tekstfarve og skygger */
+.brew {
+  background: rgba(30, 30, 30, 1);
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+/* Kontakt sektion stilarter, der definerer baggrundsfarve, tekstfarve og skygger */
+.kontakt {
+  background: rgba(30, 30, 30, 1);
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  padding-bottom: 1px;
+  padding-top: 20px;
+  opacity: 1;
+}
+
+/* Blog sektion stilarter, der definerer baggrundsfarve, tekstfarve og padding */
+.blog {
+  background: rgba(30, 30, 30, 1);
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  padding-bottom: 100px;
+  padding-top: 20px;
+  font-size: 100px;
+}
+
+/* Brew billeder stilarter, der definerer layout og margin */
+.brew-billeder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 50%;
+}
+
+/* Hero billeder stilarter for at definere bredde og margin */
+.hero-billeder img {
+  max-width: calc(33.33% - 20px);
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Produkter sektion stilarter, der definerer baggrundsfarve, padding og skygger */
+.produkter {
+  background: white;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blogs sektion stilarter, der definerer baggrundsfarve, padding og skygger */
+.blogs {
+  background: white;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Brew tekst sektion stilarter, der definerer baggrundsfarve, padding og skygger */
+.brew-tekst {
+  background: white;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Levering tekst sektion stilarter, der definerer baggrundsfarve, padding og skygger */
+.levering-tekst {
+  background: white;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Blog tekst sektion stilarter, der definerer baggrundsfarve, padding og skygger */
+.blog-tekst {
+  background: white;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Produkter overskrift stilarter, der definerer skrifttype og tekstjustering */
+.produkter h2 {
+  font-family: 'Gafata', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Produkter liste stilarter, der definerer layout og mellemrum */
+.produkter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+/* Blog liste stilarter, der definerer layout og mellemrum */
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+/* Blog liste element stilarter, der definerer baggrundsfarve og skygger */
+.blog-list li {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(30% - 20px);
+  text-align: center;
+}
+
+/* Blog billede stilarter, der definerer størrelse og margin */
+.blog-list img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  max-height: 330px;
+}
+
+/* Blog navn stilarter, der definerer farve og tekstjustering */
+.blog-navn {
+  color: rgb(75, 218, 175);
+  text-align: left;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 12px;
+}
+
+/* Blog beskrivelse stilarter, der definerer farve og margin */
+.blog-beskrivelse {
+  text-align: left;
+  margin-top: 10px;
+  color: gray;
+}
+
+/* Blog tags stilarter, der definerer tekstjustering og margin */
+.blog-tags {
+  text-align: left;
+  flex-direction: column;
+  float: left;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Blog titel stilarter, der definerer tekstjustering og størrelse */
+.blog-titel {
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Blog billede stilarter, der definerer border-radius */
+.blog-billede {
+  border-radius: 20px;
+}
+
+/* Produkter liste element stilarter, der definerer baggrundsfarve og skygger */
+.produkter-list li {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(30% - 20px);
+  text-align: center;
+}
+
+/* Produkter billede stilarter, der definerer størrelse og margin */
+.produkter-list img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  max-height: 330px;
+  border-radius: 8px;
+  border: 1px solid rgb(187, 187, 187);
+}
+
+/* Anmeldelser hjælp sektion stilarter, der definerer layout og baggrundsfarve */
+.anmeldelser-hjælp {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: rgba(30, 30, 30, 1);
+  color: white;
+  padding: 20px;
+  box-shadow: -1px -4px 8px rgba(0, 0, 0, 1);
+}
+
+/* Anmeldelser container stilarter, der definerer layout og centrering */
+.anmeldelser-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Anmeldelser titel stilarter, der definerer skrifttype og størrelse */
+.anmeldelser-titel {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Gafata', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Anmeldelser stilarter, der definerer layout og mellemrum */
+.anmeldelser {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Anmeldelse stilarter, der definerer baggrundsfarve og skygger */
+.anmeld {
+  background: rgb(66, 104, 13);
+  border-radius: 8px;
+  border: 4px solid rgba(101, 163, 13, 1);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  justify-content: space-between;
+}
+
+/* Anmeldelse billede stilarter, der definerer størrelse og margin */
+.anmeld img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+/* Anmeldelse blockquote stilarter, der fjerner margin */
+.anmeld blockquote {
+  margin: 0;
+}
+
+/* Anmeldelse footer stilarter, der definerer margin og skrifttype */
+.anmeld footer {
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: 'Gafata', sans-serif;
+}
+
+/* Social media ikoner stilarter, der definerer layout og mellemrum */
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Social media ikoner billede stilarter, der definerer størrelse og border */
+.social-media-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 2px solid rgb(252, 253, 250);
+}
+
+/* Kontakt info sektion */
+.kontakt-info {
+}
+
+/* Kontakt info overskrift stilarter, der definerer skrifttype og padding */
+.kontakt-info h2 {
+  font-weight: bold;
+  font-family: 'Gafata', sans-serif;
+  font-size: 36px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 100px;
+  padding-top: 0px;
+  padding-bottom: 45px;
+}
+
+/* Kontakt info underoverskrift stilarter */
+.kontaktinfo h3 {
+  text-align: center;
+}
+
+/* Kontakt info tekst stilarter */
+.kontakt-info p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Footer sektion stilarter, der definerer baggrundsfarve, tekstfarve og padding */
+footer {
+  background: rgba(30, 30, 30, 1);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer tekst stilarter, der definerer margin */
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Container sektion stilarter, der definerer layout, baggrundsfarve og skygger */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgb(214, 214, 214);
+  padding: 20px;
+  padding-right: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgb(187, 187, 187);
+}
+
+/* Container overskrift stilarter, der definerer tekstjustering og farve */
+.container h2 {
+  text-align: left;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Kontakt gruppe stilarter, der definerer margin */
+.kontakt-gruppe {
+  margin-bottom: 15px;
+}
+
+/* Kontakt gruppe label stilarter, der definerer farve og margin */
+.kontakt-gruppe label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+/* Kontakt gruppe input og textarea stilarter, der definerer størrelse og border */
+.kontakt-gruppe input,
+.kontakt-gruppe textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 4px;
+}
+
+/* Kontakt gruppe textarea stilarter, der definerer resizing */
+.kontakt-gruppe textarea {
+  resize: vertical;
+}
+
+/* Kategori knapper stilarter, der definerer layout og mellemrum */
+.kategori-knapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Kategori knapper stilarter for individuelle knapper */
+.kategori-knapper button {
+  flex: 1;
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Gafata', sans-serif;
+  outline: 1px solid rgb(109, 109, 109);
+  color: rgb(0, 0, 0);
+}
+
+/* Kategori knapper sidste knap stilarter for at fjerne margin */
+.kategori-knapper button:last-child {
+  margin-right: 0;
+}
+
+/* Kategori knapper aktive knap stilarter */
+.kategori-knapper button.active {
+  background-color: #0BCC8B;
+  color: #fff;
+}
+
+/* Send knap stilarter, der definerer layout */
+.send-knap {
+  display: flex;
+  justify-content: left;
+}
+
+/* Send knap knap stilarter, der definerer baggrundsfarve og padding */
+.send-knap button {
+  background-color: #0BCC8B;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  font-family: 'Gafata', sans-serif;
+}
+
+/* Send knap knap hover effekt */
+.send-knap button:hover {
+  background-color: #218838;
+}
+
+/* Send knap ikon stilarter */
+.send-knap button i {
+  margin-left: 10px;
+}
+
+/* Nyhedsbrev container sektion stilarter, der definerer layout, baggrundsfarve og skygger */
+.nyhedsbrev-container {
+  max-width: 500px;
+  margin: 20px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 350px;
+  margin-left: 130px;
+  background: #fff;
+  padding: 20px;
+  padding-bottom: 0px;
+  box-shadow: 10 10 30px rgba(107, 41, 41, 0.1);
+  border-radius: 8px;
+  border: 2px solid #787978;
+  border-radius: 20px;
+}
+
+/* Nyhedsbrev container overskrift stilarter */
+.nyhedsbrev-container h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Nyhedsbrev form gruppe stilarter */
+.nyhedsbrev-form-group {
+  margin-bottom: 15px;
+}
+
+/* Nyhedsbrev form gruppe label stilarter */
+.nyhedsbrev-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Nyhedsbrev form gruppe input stilarter */
+.nyhedsbrev-form-group input {
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Nyhedsbrev send knap stilarter */
+.nyhedsbrev-send-knap {
+  display: flex;
+  justify-content: center;
+}
+
+/* Nyhedsbrev send knap knap stilarter */
+.nyhedsbrev-send-knap button {
+  background-color: rgb(66, 104, 13);
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Nyhedsbrev send knap knap hover effekt */
+.nyhedsbrev-send-knap button:hover {
+  background-color: #218838;
+}
+
+/* Nyhedsbrev send knap ikon stilarter */
+.nyhedsbrev-send-knap button i {
+  margin-left: 10px;
+}
+
+/* Sikrer, at der ikke er horisontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+  /* Header, logo og navigation til mobil */
+  .header, .logo, nav ul {
+    align-items: center;
+  }
+
+  /* Reducer logo størrelse på mobil */
+  .logo img {
+    margin: 0 auto;
+    max-height: 80px;
+  }
+
+  /* Navigation links til mobil */
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Dropdown links til mobil */
+  .dropdown-content a {
+    font-size: 10px;
+  }
+
+  /* Hero overskrift størrelse på mobil */
+  .hero h1 {
+    font-size: 1.2em;
+  }
+
+  /* Hero billeder layout på mobil */
+  .hero-billeder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* Hero billeder størrelse på mobil */
+  .hero-billeder img {
+    width: 48%;
+    height: auto;
+    max-width: 768px;
+  }
+
+  /* Produkter liste layout på mobil */
+  .produkter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  /* Produkter liste elementer på mobil */
+  .produkter-list li {
+    width: calc(40% - 10px);
+    margin: 0;
+  }
+
+  /* Produkter billeder størrelse på mobil */
+  .produkter-list img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Anmeldelser hjælp sektion layout på mobil */
+  .anmeldelser-hjælp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+    line-height: 0.9;
+    font-size: 18px;
+  }
+
+  /* Anmeldelser container, nyhedsbrev container og kontakt info på mobil */
+  .anmeldelser-container, .nyhedsbrev-container, .kontakt-info {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  /* Nyhedsbrev container og kontakt info layout på mobil */
+  .nyhedsbrev-container, .kontakt-info {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  /* Nyhedsbrev container margin på mobil */
+  .nyhedsbrev-container {
+    margin-bottom: 15px;
+  }
+
+  /* Anmeldelser layout på mobil */
+  .anmeld {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Anmeldelser blockquote font størrelse på mobil */
+  .anmeld blockquote {
+    font-size: 0.9em;
+    margin: 0;
+  }
+
+  /* Anmeldelser navn størrelse på mobil */
+  .anmeld h3 {
+    font-size: 0.9em;
+  }
+
+  /* Social media ikoner layout på mobil */
+  .social-media-icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Anmeldelser, nyhedsbrev og kontakt info overskrifter på mobil */
+  .anmeldelser-container h2, .nyhedsbrev-container h2, .kontakt-info h2 {
+    font-size: 1.2em;
+  }
+
+  /* Anmeldelser, nyhedsbrev og kontakt info tekst på mobil */
+  .anmeldelser-container p, .nyhedsbrev-container p, .kontakt-info p {
+    font-size: 0.9em;
+  }
+
+  /* Blog sektion stilarter på mobil */
+  .blog {
+    background: rgba(30, 30, 30, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  /* Container sektion stilarter på mobil */
+  .container {
+    max-width: 330px;
+    margin: 50px auto;
+    background: rgb(214, 214, 214);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgb(187, 187, 187);
+  }
+
+  /* Form gruppe input og textarea stilarter på mobil */
+  .kontakt-gruppe input, .kontakt-gruppe textarea {
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 4px;
+  }
+}
