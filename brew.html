@@ -1,121 +1,181 @@
 <!-- Metadata og stilark -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oplev de bedste alkoholfri øl fra ZeroBuzz Brew. Nyd smagen af vores IPA, stout og pilsner uden alkohol. Perfekt til en sund livsstil.">
-    <meta name="keywords" content="Alkoholfri, Alkoholfri øl">
-    <meta name="author" content="Victor Vorning">
-    <link href="https://fonts.googleapis.com/css?family=Gafata&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Oplev de bedste alkoholfri øl fra ZeroBuzz Brew. Nyd smagen af vores IPA, stout og pilsner uden alkohol. Perfekt til en sund livsstil."
+    />
+    <meta name="keywords" content="Alkoholfri, Alkoholfri øl" />
+    <meta name="author" content="Victor Vorning" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gafata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/styles.css" rel="stylesheet" />
     <title>ZeroBuzz Brew | The Brew</title>
-    <link rel="icon" type="image/x-icon" href="/images/faviconIcon.png">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="/images/faviconIcon.png" />
+  </head>
+  <body>
     <!-- Header sektion med logo og navigation -->
     <header class="header">
-        <div class="logo" onclick="window.location.href='index.html'"><img src="images/logo.png" alt="ZeroBuzz Brew Logo"></div>
-        <nav class="nav">
-            <ul>
-                <li><a href="/brew.html">Brew</a></li>
-                <li><a href="index.html#products">Produkter</a></li>
-                <li class="dropdown">
-                    <a href="#help">Hjælp <span class="pil-ned">˅</span></a>
-                    <div class="dropdown-content">
-                        <a href="/blog.html">Blog</a>
-                        <a href="/kontakt.html">Kontakt</a>
-                        <a href="/levering.html">Levering/retur</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+      <div class="logo" onclick="window.location.href='index.html'">
+        <img src="images/logo.png" alt="ZeroBuzz Brew Logo" />
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="/brew.html">Brew</a></li>
+          <li><a href="index.html#products">Produkter</a></li>
+          <li class="dropdown">
+            <a href="#help">Hjælp <span class="pil-ned">˅</span></a>
+            <div class="dropdown-content">
+              <a href="/blog.html">Blog</a>
+              <a href="/kontakt.html">Kontakt</a>
+              <a href="/levering.html">Levering/retur</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- Hero sektion med billeder -->
     <main>
-        <section id="home" class="brew">
-            <img src="images/brewppl.jpeg" style="border-radius: 50px; max-width: 49%;" alt="Brew mennesker">
-            <img src="images/brewppl.jpeg" style="border-radius: 50px; max-width: 49%;" alt="Brew mennesker">
-        </section>
-        <!-- Produkter sektion med tekst om ZeroBuzz Brewery -->
-        <section id="products" class="brew-tekst">
-            <h1 style="padding-bottom: 40px;">ZeroBuzz Brewery</h1>
-            <p>I mere end 50 år har ZeroBuzz Brew været dedikeret til kunsten og håndværket inden for ølbrygning. </p>
-            <p>Vores rejse begyndte i en lille landsbybryggeri, hvor en gruppe passionerede bryggere delte en fælles vision: at skabe øl af højeste kvalitet, som alle kan nyde – uanset om de ønsker alkohol eller ej.</p>
-            <p>årene har vi bevaret vores traditionelle bryggemetoder, samtidig med at vi har omfavnet innovation og moderne teknologi.</p>
-            <p>Vores bryggere har arbejdet utrætteligt for at perfektionere vores opskrifter, og resultatet er en serie af alkoholfri øl, der ikke går på kompromis med smag eller kvalitet.</p>
-            <p>ZeroBuzz Brew er ikke bare et bryggeri; det er et fællesskab. Vi tror på, at sammenhold er vigtigere end alkohol, og vi stræber efter at skabe øl, der bringer mennesker sammen – uanset deres præferencer.</p>
-            <p>Vores øl er lavet med omhu og kærlighed, ved hjælp af de fineste naturlige ingredienser og bæredygtige praksisser.</p>
-            <p>Fra vores første bryg til vores nyeste kreationer, har vores mission været klar: at tilbyde et sundt og lækkert alternativ til traditionelle øl.</p>
-            <p>Vi er stolte af vores arv og ser frem til mange flere år med at brygge øl, der både smager godt og gør godt.</p>
-            <p style="margin-top: 90px; font-style: italic;">Tak fordi du er en del af vores rejse. Skål til endnu flere gode stunder med ZeroBuzz Brew!</p>
-        </section>
-        <!-- Anmeldelser og hjælp sektion -->
-        <section id="anmeldelser-hjælp" class="anmeldelser-hjælp">
-            <div class="anmeldelser-container">
-                <h2 class="anmeldelser-titel">Anmeldelser</h2>
-                <div class="anmeldelser">
-                    <div class="anmeld">
-                        <img src="images/kunde1.png" alt="Kunde 1">
-                        <blockquote>
-                            <p>"Jeg elsker ZeroBuzz Brew! Det er ikke kun godt for miljøet, men smagen er også fantastisk. Det er min go-to drik, især når jeg hænger ud med vennerne."</p>
-                            <h3>— Maria Jensen, Marketing Specialist</h3>
-                        </blockquote>
-                    </div>
-                    <div class="anmeld">
-                        <img src="images/kunde2.png" alt="Kunde 2">
-                        <blockquote>
-                            <p>"ZeroBuzz Brew har virkelig imponeret mig. Det er en god erstatning for almindelig øl, og det er sundere og mere bæredygtigt. Jeg har anbefalet det til alle mine venner."</p>
-                            <h3>— Andreas Madsen, 28, Fitness Entusiast</h3>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="social-media-icons">
-                    <img src="images/fb.png" alt="Facebook">
-                    <img src="images/twitter.png" alt="Twitter">
-                    <img src="images/insta.png" alt="Instagram">
-                </div>
+      <section id="home" class="brew">
+        <img
+          src="images/brewppl.jpeg"
+          style="border-radius: 50px; max-width: 49%"
+          alt="Brew mennesker"
+        />
+        <img
+          src="images/brewppl.jpeg"
+          style="border-radius: 50px; max-width: 49%"
+          alt="Brew mennesker"
+        />
+      </section>
+      <!-- Produkter sektion med tekst om ZeroBuzz Brewery -->
+      <section id="products" class="brew-tekst">
+        <h1 style="padding-bottom: 40px">ZeroBuzz Brewery</h1>
+        <p>
+          I mere end 50 år har ZeroBuzz Brew været dedikeret til kunsten og
+          håndværket inden for ølbrygning.
+        </p>
+        <p>
+          Vores rejse begyndte i en lille landsbybryggeri, hvor en gruppe
+          passionerede bryggere delte en fælles vision: at skabe øl af højeste
+          kvalitet, som alle kan nyde – uanset om de ønsker alkohol eller ej.
+        </p>
+        <p>
+          årene har vi bevaret vores traditionelle bryggemetoder, samtidig med
+          at vi har omfavnet innovation og moderne teknologi.
+        </p>
+        <p>
+          Vores bryggere har arbejdet utrætteligt for at perfektionere vores
+          opskrifter, og resultatet er en serie af alkoholfri øl, der ikke går
+          på kompromis med smag eller kvalitet.
+        </p>
+        <p>
+          ZeroBuzz Brew er ikke bare et bryggeri; det er et fællesskab. Vi tror
+          på, at sammenhold er vigtigere end alkohol, og vi stræber efter at
+          skabe øl, der bringer mennesker sammen – uanset deres præferencer.
+        </p>
+        <p>
+          Vores øl er lavet med omhu og kærlighed, ved hjælp af de fineste
+          naturlige ingredienser og bæredygtige praksisser.
+        </p>
+        <p>
+          Fra vores første bryg til vores nyeste kreationer, har vores mission
+          været klar: at tilbyde et sundt og lækkert alternativ til
+          traditionelle øl.
+        </p>
+        <p>
+          Vi er stolte af vores arv og ser frem til mange flere år med at brygge
+          øl, der både smager godt og gør godt.
+        </p>
+        <p style="margin-top: 90px; font-style: italic">
+          Tak fordi du er en del af vores rejse. Skål til endnu flere gode
+          stunder med ZeroBuzz Brew!
+        </p>
+      </section>
+      <!-- Anmeldelser og hjælp sektion -->
+      <section id="anmeldelser-hjælp" class="anmeldelser-hjælp">
+        <div class="anmeldelser-container">
+          <h2 class="anmeldelser-titel">Anmeldelser</h2>
+          <div class="anmeldelser">
+            <div class="anmeld">
+              <img src="images/kunde1.png" alt="Kunde 1" />
+              <blockquote>
+                <p>
+                  "Jeg elsker ZeroBuzz Brew! Det er ikke kun godt for miljøet,
+                  men smagen er også fantastisk. Det er min go-to drik, især når
+                  jeg hænger ud med vennerne."
+                </p>
+                <h3>— Maria Jensen, Marketing Specialist</h3>
+              </blockquote>
             </div>
-        
-            <!-- Kontaktinformation sektion -->
-            <div class="kontakt-info">
-                <h2>Kontakt</h2>
-                <h3>Adresse:</h3>
-                <p>Hovedgaden 123, 1000 København, Danmark</p>
-                <h3>Telefon:</h3>
-                <p><a href="tel:12-34-56-78">+45 12 34 56 78</a></p>
-                <h3>E-mail:</h3>
-                <p><a href="mailto:info@zerobuzzbrew.dk">info@zerobuzzbrew.dk</a></p>
-                <h3>Åbningstider:</h3>
-                <p>Mandag - Fredag: 09:00 - 18:00<br>
-                   Lørdag: 10:00 - 16:00<br>
-                   Søndag: Lukket</p>
+            <div class="anmeld">
+              <img src="images/kunde2.png" alt="Kunde 2" />
+              <blockquote>
+                <p>
+                  "ZeroBuzz Brew har virkelig imponeret mig. Det er en god
+                  erstatning for almindelig øl, og det er sundere og mere
+                  bæredygtigt. Jeg har anbefalet det til alle mine venner."
+                </p>
+                <h3>— Andreas Madsen, 28, Fitness Entusiast</h3>
+              </blockquote>
             </div>
-            <!-- Nyhedsbrev tilmeldingssektion -->
-            <div class="nyhedsbrev-container">
-                <h2>Tilmeld dig vores nyhedsbrev</h2>
-                <form id="nyhedsbrevForm">
-                    <div class="nyhedsbrev-form-group">
-                        <label for="name">Dit navn</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="nyhedsbrev-form-group">
-                        <label for="email">Din email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="nyhedsbrev-send-knap">
-                        <button type="submit">Tilmeld <i>✈️</i></button>
-                    </div>
-                </form>
+          </div>
+          <div class="social-media-icons">
+            <img src="images/fb.png" alt="Facebook" />
+            <img src="images/twitter.png" alt="Twitter" />
+            <img src="images/insta.png" alt="Instagram" />
+          </div>
+        </div>
+
+        <!-- Kontaktinformation sektion -->
+        <div class="kontakt-info">
+          <h2>Kontakt</h2>
+          <h3>Adresse:</h3>
+          <p>Hovedgaden 123, 1000 København, Danmark</p>
+          <h3>Telefon:</h3>
+          <p><a href="tel:12-34-56-78">+45 12 34 56 78</a></p>
+          <h3>E-mail:</h3>
+          <p><a href="mailto:info@zerobuzzbrew.dk">info@zerobuzzbrew.dk</a></p>
+          <h3>Åbningstider:</h3>
+          <p>
+            Mandag - Fredag: 09:00 - 18:00<br />
+            Lørdag: 10:00 - 16:00<br />
+            Søndag: Lukket
+          </p>
+        </div>
+        <!-- Nyhedsbrev tilmeldingssektion -->
+        <div class="nyhedsbrev-container">
+          <h2>Tilmeld dig vores nyhedsbrev</h2>
+          <form id="nyhedsbrevForm">
+            <div class="nyhedsbrev-form-group">
+              <label for="name">Dit navn</label>
+              <input type="text" id="name" name="name" required />
             </div>
-            <script src="javascript/nyhed.js"></script>
-        </section>
+            <div class="nyhedsbrev-form-group">
+              <label for="email">Din email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="nyhedsbrev-send-knap">
+              <button type="submit">Tilmeld <i>✈️</i></button>
+            </div>
+          </form>
+        </div>
+        <script src="javascript/nyhed.js"></script>
+      </section>
     </main>
     <!-- Footer sektion -->
     <footer class="footer">
-        <p>© 2024 ZeroBuzz Brew</p>
-        <p>ZeroBuzz Brew, Hovedgaden 123, 1000 København, Danmark</p>
+      <p>© 2024 ZeroBuzz Brew</p>
+      <p>ZeroBuzz Brew, Hovedgaden 123, 1000 København, Danmark</p>
     </footer>
-</body>
+  </body>
 </html>

@@ -6,7 +6,7 @@
 
 /* Stilarter for body, som definerer skrifttype, baggrundsfarve, tekstfarve og skygger */
 body {
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: rgba(30, 30, 30, 1);
@@ -51,7 +51,7 @@ nav ul {
   display: flex;
   gap: 50px;
   font-size: 24px;
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
 }
 
 /* Navigation link stilarter, der definerer tekstfarve og fjernet understregning */
@@ -59,7 +59,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-size: 30px;
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
 }
 
 /* Pil ned stilarter for dropdown-menuer */
@@ -108,7 +108,7 @@ nav a {
 
 /* Hero overskrift stilarter, der definerer skrifttype og margin */
 .hero h1 {
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -134,7 +134,7 @@ nav a {
   background-color: red;
   color: white;
   border: none;
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -255,7 +255,7 @@ nav a {
 
 /* Produkter overskrift stilarter, der definerer skrifttype og tekstjustering */
 .produkter h2 {
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
   font-weight: bold;
   font-size: 36px;
   margin-bottom: 20px;
@@ -377,7 +377,7 @@ nav a {
 .anmeldelser-titel {
   font-weight: bold;
   font-size: 36px;
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
@@ -422,7 +422,7 @@ nav a {
 .anmeld footer {
   margin-top: 10px;
   font-weight: bold;
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
 }
 
 /* Social media ikoner stilarter, der definerer layout og mellemrum */
@@ -449,7 +449,7 @@ nav a {
 /* Kontakt info overskrift stilarter, der definerer skrifttype og padding */
 .kontakt-info h2 {
   font-weight: bold;
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
   font-size: 36px;
   margin-bottom: 0px;
   text-align: center;
@@ -546,7 +546,7 @@ footer p {
   background-color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
   outline: 1px solid rgb(109, 109, 109);
   color: rgb(0, 0, 0);
 }
@@ -558,7 +558,7 @@ footer p {
 
 /* Kategori knapper aktive knap stilarter */
 .kategori-knapper button.active {
-  background-color: #0BCC8B;
+  background-color: #0bcc8b;
   color: #fff;
 }
 
@@ -570,7 +570,7 @@ footer p {
 
 /* Send knap knap stilarter, der definerer baggrundsfarve og padding */
 .send-knap button {
-  background-color: #0BCC8B;
+  background-color: #0bcc8b;
   color: #000000;
   padding: 10px 20px;
   border: none;
@@ -579,7 +579,7 @@ footer p {
   display: flex;
   align-items: center;
   transition: background-color 0.3s ease;
-  font-family: 'Gafata', sans-serif;
+  font-family: "Gafata", sans-serif;
 }
 
 /* Send knap knap hover effekt */
@@ -668,14 +668,17 @@ footer p {
 }
 
 /* Sikrer, at der ikke er horisontal scrolling */
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
 /* Media Queries for Mobile Optimization */
 @media (max-width: 768px) {
   /* Header, logo og navigation til mobil */
-  .header, .logo, nav ul {
+  .header,
+  .logo,
+  nav ul {
     align-items: center;
   }
 
@@ -747,7 +750,9 @@ html, body {
   }
 
   /* Anmeldelser container, nyhedsbrev container og kontakt info på mobil */
-  .anmeldelser-container, .nyhedsbrev-container, .kontakt-info {
+  .anmeldelser-container,
+  .nyhedsbrev-container,
+  .kontakt-info {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
@@ -755,7 +760,8 @@ html, body {
   }
 
   /* Nyhedsbrev container og kontakt info layout på mobil */
-  .nyhedsbrev-container, .kontakt-info {
+  .nyhedsbrev-container,
+  .kontakt-info {
     margin-top: 20px;
     text-align: center;
     padding: 20px 20px;
@@ -793,12 +799,16 @@ html, body {
   }
 
   /* Anmeldelser, nyhedsbrev og kontakt info overskrifter på mobil */
-  .anmeldelser-container h2, .nyhedsbrev-container h2, .kontakt-info h2 {
+  .anmeldelser-container h2,
+  .nyhedsbrev-container h2,
+  .kontakt-info h2 {
     font-size: 1.2em;
   }
 
   /* Anmeldelser, nyhedsbrev og kontakt info tekst på mobil */
-  .anmeldelser-container p, .nyhedsbrev-container p, .kontakt-info p {
+  .anmeldelser-container p,
+  .nyhedsbrev-container p,
+  .kontakt-info p {
     font-size: 0.9em;
   }
 
@@ -825,7 +835,8 @@ html, body {
   }
 
   /* Form gruppe input og textarea stilarter på mobil */
-  .kontakt-gruppe input, .kontakt-gruppe textarea {
+  .kontakt-gruppe input,
+  .kontakt-gruppe textarea {
     width: 100%;
     padding: 10px 0px;
     border: 1px solid rgb(187, 187, 187);
